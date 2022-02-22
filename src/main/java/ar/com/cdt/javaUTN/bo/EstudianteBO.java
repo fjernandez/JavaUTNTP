@@ -14,10 +14,11 @@ public interface EstudianteBO {
 	
 	public EstudianteEntity guardarEstudiante(EstudianteModel estudiante) throws TPDuplicatedStudentException;
 	
-	public EstudianteEntity getEstudiante(String dni) throws TPNoStudentFoundException;
+	public EstudianteEntity getEstudiante(long dni) throws TPNoStudentFoundException;
 	
 	public List<EstudianteEntity> getAllEstudiantes() throws TPNoStudentFoundException;
 
 	public MessageModel updateStudent(String accion, EstudianteModel estudiante) throws TPNoStudentFoundException, TPInvalidActionException, TPDatabaseException;
-
+	
+	public MessageModel calculateDrinks();
 }

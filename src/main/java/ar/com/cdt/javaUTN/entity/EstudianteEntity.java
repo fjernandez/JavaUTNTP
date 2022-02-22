@@ -72,9 +72,11 @@ public class EstudianteEntity {
 	public void setActivo(boolean activo) {
 		this.activo = activo;
 	}
+
 	@Override
 	public String toString() {
-		return "EstudianteEntity [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", DNI=" + DNI
+		return "EstudianteEntity [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", Dni=" + DNI
 				+ ", edad=" + edad + ", activo=" + activo + "]";
 	}
+	
 }
